@@ -1,15 +1,15 @@
-# sanity-plugin-markdown
+# sanity-plugin-mdx
 
 Markdown input component and schema type for [Sanity](https://www.sanity.io/)
 
-[![npm version](https://img.shields.io/npm/v/sanity-plugin-markdown.svg?style=flat-square)](http://browsenpm.org/package/sanity-plugin-markdown)
+[![npm version](https://img.shields.io/npm/v/sanity-plugin-markdown.svg?style=flat-square)](http://browsenpm.org/package/sanity-plugin-mdx)
 
 ## Installing
 
 In your Sanity studio folder, run:
 
 ```
-sanity install markdown
+sanity install mdx
 ```
 
 ## Features
@@ -26,21 +26,21 @@ sanity install markdown
 
 ```js
 export default {
-  name: 'blogPost',
-  title: 'Blog Post',
-  type: 'document',
+  name: "blogPost",
+  title: "Blog Post",
+  type: "document",
   fields: [
     // ... other fields ...
     {
-      name: 'body',
-      title: 'Body',
-      type: 'markdown',
+      name: "body",
+      title: "Body",
+      type: "markdown",
       options: {
-        minRows: 20
-      }
-    }
-  ]
-}
+        minRows: 20,
+      },
+    },
+  ],
+};
 ```
 
 ## Options
@@ -58,9 +58,9 @@ export default {
 See options table. Can be retrieved programatically from the `defaultOptions` property on the input:
 
 ```js
-import MarkdownInput from 'sanity-plugin-markdown'
+import MarkdownInput from "sanity-plugin-markdown";
 
-console.log(defaultOptions)
+console.log(defaultOptions);
 ```
 
 ## Keyboard shortcuts

@@ -1,14 +1,14 @@
 {
-  "name": "sanity-plugin-markdown",
+  "name": "sanity-plugin-mdx",
   "version": "1.0.0",
-  "description": "Markdown type and input for Sanity",
+  "description": "Markdown plus mdx support type and input for Sanity",
   "main": "lib/MarkdownInput.js",
   "scripts": {
     "prepublishOnly": "babel -D -d lib/ src/"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/rexxars/sanity-plugin-markdown.git"
+    "url": "git+ssh://git@github.com/jtomchak/sanity-plugin-mdx.git"
   },
   "keywords": [
     "markdown",
@@ -17,12 +17,12 @@
     "input",
     "cms"
   ],
-  "author": "Espen Hovlandsdal <espen@hovlandsdal.com>",
+  "author": "Jesse Tomchak <jtomchak@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rexxars/sanity-plugin-markdown/issues"
+    "url": "https://github.com/jtomchak/sanity-plugin-mdx/issues"
   },
-  "homepage": "https://github.com/rexxars/sanity-plugin-markdown#readme",
+  "homepage": "https://github.com/jtomchak/sanity-plugin-mdx",
   "dependencies": {
     "diff-match-patch": "^1.0.4",
     "react-autosize-textarea": "^5.0.0",
