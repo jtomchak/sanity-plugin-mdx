@@ -1,10 +1,11 @@
 const path = require("path");
+const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "markdown-input.js",
+    filename: "main.js",
     library: "mardownInput",
   },
   module: {
@@ -44,5 +45,9 @@ module.exports = {
   ],
   node: {
     fs: "empty",
+  },
+  optimization: {
+    minimize: false,
+    minimizer: [new TerserPlugin()],
   },
 };
