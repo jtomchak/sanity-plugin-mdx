@@ -1,11 +1,17 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Button from 'part:@sanity/components/buttons/default'
-import styles from './MarkdownInput.css'
+import React from "react";
+import PropTypes from "prop-types";
+import Button from "part:@sanity/components/buttons/default";
+import styles from "./index.css";
 
 function ModeControls(props) {
-  const {currentMode, onSetPreviewMode, onSetWriteMode, onBlur, onFocus} = props
-  const inWriteMode = currentMode === 'write'
+  const {
+    currentMode,
+    onSetPreviewMode,
+    onSetWriteMode,
+    onBlur,
+    onFocus,
+  } = props;
+  const inWriteMode = currentMode === "write";
   return (
     <React.Fragment>
       <Button
@@ -13,7 +19,7 @@ function ModeControls(props) {
         kind="simple"
         type="button"
         ripple={false}
-        color={inWriteMode ? 'primary' : undefined}
+        color={inWriteMode ? "primary" : undefined}
         onClick={onSetWriteMode}
         onFocus={onFocus}
         onBlur={onBlur}
@@ -27,15 +33,15 @@ function ModeControls(props) {
         kind="simple"
         type="button"
         ripple={false}
-        color={inWriteMode ? undefined : 'primary'}
+        color={inWriteMode ? undefined : "primary"}
         onClick={onSetPreviewMode}
         onFocus={onFocus}
         onBlur={onBlur}
       >
-        Preview
+        Preview Meow
       </Button>
     </React.Fragment>
-  )
+  );
 }
 
 ModeControls.propTypes = {
@@ -43,7 +49,7 @@ ModeControls.propTypes = {
   onSetWriteMode: PropTypes.func.isRequired,
   onSetPreviewMode: PropTypes.func.isRequired,
   onBlur: PropTypes.func.isRequired,
-  onFocus: PropTypes.func.isRequired
-}
+  onFocus: PropTypes.func.isRequired,
+};
 
-export default ModeControls
+export default ModeControls;

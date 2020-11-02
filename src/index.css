@@ -1,4 +1,4 @@
-@import 'part:@sanity/base/theme/variables-style';
+@import "part:@sanity/base/theme/variables-style";
 
 .tabs {
   border-bottom: 1px solid var(--gray);
