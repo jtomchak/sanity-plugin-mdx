@@ -1,6 +1,7 @@
 # sanity-plugin-mdx
 
-Markdown input component and schema type for [Sanity](https://www.sanity.io/)
+Markdown w/ MDX input component and schema type for [Sanity](https://www.sanity.io/) based on
+[rexxars/sanity-plugin-markdown](https://github.com/rexxars/sanity-plugin-markdown)
 
 [![npm version](https://img.shields.io/npm/v/sanity-plugin-markdown.svg?style=flat-square)](http://browsenpm.org/package/sanity-plugin-mdx)
 
